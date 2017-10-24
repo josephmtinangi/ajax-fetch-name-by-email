@@ -16,12 +16,15 @@
                 <div class="form-group">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" class="form-control"/>
+                    <p class="help-block">
+                        <span id="email-error"></span>
+                    </p>
                 </div>
                 <div class="form-group">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" class="form-control"/>
                 </div>
-                <button class="btn btn-primary">Next</button>                
+                <button class="btn btn-primary" disabled id="btnNext">Next</button>                
             </div>
         </div>
     </div>
