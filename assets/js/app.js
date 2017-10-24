@@ -8,7 +8,7 @@ $(document).ready(function(){
             var email = $("#email").val();
             
             $.ajax({
-                url: "https://ajax-fetch-name-by-email-josephmtinangi.c9users.io/api/get-name.php?email=" + email,
+                url: "/api/get-name.php?email=" + email,
                 data: {
                     format: "json",
                 },
