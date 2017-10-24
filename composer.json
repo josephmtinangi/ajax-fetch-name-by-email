@@ -1,0 +1,15 @@
+{
+    "name": "josephmtinangi/ajax-fetch-name-by-email",
+    "description": "Fetch name by email using ajax",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joseph Mtinangi",
+            "email": "josephmtinangi@gmail.com"
+        }
+    ],
+    "require": {
+        "robmorgan/phinx": "^0.9.1"
+    }
+}
