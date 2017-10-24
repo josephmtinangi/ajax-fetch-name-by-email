@@ -1,5 +1,17 @@
 <?php
 
+require "../vendor/autoload.php";
+
+$dotenv = new Dotenv\Dotenv(__DIR__ . '/../');
+$dotenv->load();
+
+$dbconn     = $_ENV['DB_CONNECTION'];
+$servername = $_ENV['DB_HOST'];
+$port       = $_ENV['DB_PORT'];
+$dbname     = $_ENV['DB_DATABASE'];
+$username   = $_ENV['DB_USERNAME'];
+$password   = $_ENV['DB_PASSWORD'];
+
 if(!isset($_GET['email'])){
     echo json_encode([
         'status' => 'Error',
@@ -8,11 +20,6 @@ if(!isset($_GET['email'])){
     die();
 }else{
     $email = $_GET['email'];
-
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "c9";
     
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
