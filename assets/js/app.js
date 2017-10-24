@@ -16,6 +16,8 @@ $(document).ready(function(){
                     $('.error').hide();
                     var data = JSON.parse(data);
                     if(data.status == "Error"){
+                        $("#btnNext").prop("disabled", false);
+                        $("#name").val('');
                         $("#email-error").text('No user exists with that email address');
                     }else{
                         $("#email-error").text('');

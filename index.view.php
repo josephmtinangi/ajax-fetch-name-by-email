@@ -13,24 +13,48 @@
     
     <div class="container">
         <div class="row">
-            <div class="col-md-4 col-sm-offset-4">
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" class="form-control"/>
-                    <p class="help-block">
-                        <span id="email-error"></span>
-                    </p>
-                    <div class="error">
-                        <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
-                        <span class="sr-only">Loading...</span>                        
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" class="form-control"/>
-                </div>
-                <button class="btn btn-primary" disabled id="btnNext">Next</button>                
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                       <div class="panel-heading">
+                           <h3 class="panel-title">#</h3>
+                       </div>
+                       <div class="panel-body">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control"/>
+                                <p class="help-block">
+                                    <span id="email-error"></span>
+                                </p>
+                                <div class="error">
+                                    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                                    <span class="sr-only">Loading...</span>                        
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name" class="form-control"/>
+                            </div>
+                            <button class="btn btn-primary" disabled id="btnNext">Next</button>
+                       </div>
+                   </div>   
             </div>
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                     <div class="panel-heading">
+                         <h3 class="panel-title">Some existing accounts</h3>
+                     </div>
+                     <div class="panel-body">
+                         <ul>
+                             <li>zakary.boehm@frami.org</li>
+                             <li>clement.gutkowski@ohara.com</li>
+                             <li>kenya.crooks@gmail.com</li>
+                             <li>lehner.luna@bogan.com</li>
+                             <li>robel.rosalind@leffler.net</li>
+                         </ul>
+                     </div>
+                 </div>                    
+            </div>                             
         </div>
     </div>
     
