@@ -1,8 +1,10 @@
 $(document).ready(function(){
     $("#name").focus(function(){
         if($("#email").val().length == 0){
-            console.log('email empty');
+            $("#email-error").text('Email cannot be empty');
         }else{
+            $("#email-error").text('');
+            $('.error').show();
             var email = $("#email").val();
             
             $.ajax({
@@ -11,6 +13,7 @@ $(document).ready(function(){
                     format: "json",
                 },
                 success: function (data) {
+                    $('.error').hide();
                     var data = JSON.parse(data);
                     if(data.status == "Error"){
                         $("#email-error").text('No user exists with that email address');

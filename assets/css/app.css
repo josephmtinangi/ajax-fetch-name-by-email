@@ -2,3 +2,6 @@ body {
     margin: 0;
     padding-top: 50px;
 }
+.error {
+    display: none;
+}
