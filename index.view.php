@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fetch name  by email using Ajax</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="/assets/css/app.css" type="text/css" />
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-offset-4">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control"/>
+                </div>
+                <button class="btn btn-primary">Next</button>                
+            </div>
+        </div>
+    </div>
+    
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
